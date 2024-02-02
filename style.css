@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #002339;
+    color: #fff;
+}
+
+.container {
+    margin: 10%;
+    width: 80%;
+    max-width: 400px;
+    max-height: 100px;
+}
+
+.display {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span{
+    color: #CBB6F6;
+    border-bottom: 4px solid #CBB6F6;
+    padding-bottom: 7px;
+}
+
+.display img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+
+.container button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #3a004f;
+    color: #CBB6F6;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.toast {
+    visibility: hidden;
+    background-color: #3a004f;
+    color: #CBB6F6;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 17px;
+}
+
+.toast.show {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 0 5px;
+    }
+}
